@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro Musée</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body class="homepage">
+  <header>
+    <div class="logo">
+      <h1>MicroMusée</h1>
+    </div>
+    <button class="menu-button">☰</button>
+    <nav>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/peintures-et-sculptures.html">Peintures et Sculptures</a></li>
+        <li><a href="/musiques.html">Musiques</a></li>
+        <li><a href="/livres.html">Livres</a></li>
+        <li><a href="/films.html">Films</a></li>
+        <li><a href="/architecture.html">Architecture</a></li>
+        <li><a href="/divers.html">Divers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Bienvenue au MicroMusée</h1>
+        <a href="#content" class="discover-button">Découvrir</a>
+        <div class="horizontal-lines"></div>
+        <p class="reveal-text">Ce site regroupe les œuvres préférées des passants du Jardin du Luxembourg. Pour chaque
+          œuvre vous trouverez une courte présentation et l'interview correspondante.
+          Bonne visite !</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const discoverButton = document.querySelector('.discover-button');
+      const revealText = document.querySelector('.reveal-text');
+      const horizontalLines = document.querySelector('.horizontal-lines');
+      let isVisible = false;
+
+      discoverButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        isVisible = !isVisible;
+
+        if (isVisible) {
+          revealText.classList.add('visible');
+          horizontalLines.classList.add('visible');
+        } else {
+          revealText.classList.remove('visible');
+          horizontalLines.classList.remove('visible');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

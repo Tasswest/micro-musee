@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Large media files
+*.mp4
+*.MOV
+*.mov
+*.avi
+*.mkv
+
+# Local audio (kept locally, not in repo)
+audio/
+
+# Broken/removed references
+MICRO_TROTTOIR/
+
+# Build/staging artifacts
+imgbb_upload/
+replace_images.py

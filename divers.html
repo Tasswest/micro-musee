@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divers - MicroMusée</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body class="divers-page">
+  <header>
+    <div class="logo">
+      <h1>MicroMusée</h1>
+    </div>
+    <button class="menu-button">☰</button>
+    <nav>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/peintures-et-sculptures.html">Peintures et Sculptures</a></li>
+        <li><a href="/musiques.html">Musiques</a></li>
+        <li><a href="/livres.html">Livres</a></li>
+        <li><a href="/films.html">Films</a></li>
+        <li><a href="/architecture.html">Architecture</a></li>
+        <li><a href="/divers.html">Divers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero"
+      style="background-image: url('https://i.ibb.co/GmSnyMs/90b40ab15e3f991690a1c861fdb28c1104cd5252-1360x764-jpg.avif'); background-size: cover; background-position: center;">
+      <div class="hero-text">
+        <h1>Divers</h1>
+        <button onclick="document.getElementById('gallery-section').scrollIntoView({behavior: 'smooth'})"
+          class="discover-button">Découvrir</button>
+      </div>
+    </section>
+
+    <div id="gallery-section" class="content" style="margin-top: 110px;">
+      <section>
+        <h2 style="text-align:center; margin-top: 13rem; margin-bottom: 2rem;">Divers</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <a href="items/Assassin_s_Creed.html">
+              <img src="https://i.ibb.co/SwLzNsyF/Assassin-s-creed.jpg" alt="Assassin's Creed">
+              <div class="caption">Assassin's Creed</div>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="items/Napalm_Girl_the_Vietnam_war.html">
+              <img src="https://i.ibb.co/8402wzGP/Napalm-maedchen.jpg" alt="Napalm Girl, Vietnam War">
+              <div class="caption">Napalm Girl, Vietnam War</div>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="items/Olivia_Bee_Pre-Kiss_2010.html">
+              <img src="https://i.ibb.co/RTjhFxJJ/Olivia-Bee-Pre-Kiss-2010.jpg" alt="Olivia Bee, Pre-Kiss, 2010">
+              <div class="caption">Olivia Bee, Pre-Kiss, 2010</div>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="items/Wolfgang_Tillmans_Urgency_XVIII_2006.html">
+              <img src="https://i.ibb.co/tMFHRhvB/Wolfgang-Tillmans-Urgency-XVIII-2006.jpg" alt="Wolfgang Tillmans, Urgency XVIII, 2006">
+              <div class="caption">Wolfgang Tillmans, Urgency XVIII, 2006</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musiques - MicroMusée</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body class="musique-page">
+  <header>
+    <div class="logo">
+      <h1>MicroMusée</h1>
+    </div>
+    <button class="menu-button">☰</button>
+    <nav>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/peintures-et-sculptures.html">Peintures et Sculptures</a></li>
+        <li><a href="/musiques.html">Musiques</a></li>
+        <li><a href="/livres.html">Livres</a></li>
+        <li><a href="/films.html">Films</a></li>
+        <li><a href="/architecture.html">Architecture</a></li>
+        <li><a href="/divers.html">Divers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero"
+      style="background-image: url('https://i.ibb.co/zVRhcQKy/52046.jpg'); background-size: cover; background-position: center;">
+      <div class="hero-text">
+        <h1>Musiques</h1>
+        <button onclick="document.getElementById('gallery-section').scrollIntoView({behavior: 'smooth'})"
+          class="discover-button">Découvrir</button>
+      </div>
+    </section>
+
+    <div id="gallery-section" class="content" style="margin-top: 110px;">
+      <section>
+        <h2 style="text-align:center; margin-top: 13rem; margin-bottom: 2rem;">Musiques</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <a href="items/Yanns_Clic_clic_pan_pan.html">
+              <img src="https://i.ibb.co/Fkz8DvD1/clic-clic-pan-pan-yanns.jpg" alt="Clic clic pan pan, Yanns, 2021">
+              <div class="caption">Clic clic pan pan - Yanns (2021)</div>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="items/Shakira_Waka_Waka.html">
+              <img src="https://i.ibb.co/CsnGWr8n/waka-waka-shakira.jpg" alt="Waka Waka, Shakira, 2010">
+              <div class="caption">Waka Waka - Shakira (2010)</div>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="items/Chopin_Ballade_No_1.html">
+              <img src="https://i.ibb.co/Qv2Dtpsh/Frederic-Chopin.jpg" alt="Ballade No. 1, Chopin, 1835">
+              <div class="caption">Ballade No. 1 - Chopin (1835)</div>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="items/Vue_sur_la_mer_Poupie_(2021).html">
+              <img src="https://i.ibb.co/PG2dqfyc/vue-sur-la-mer-poupie.jpg" alt="Vue sur la mer, Poupie, 2021">
+              <div class="caption">Vue sur la mer - Poupie (2021)</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
